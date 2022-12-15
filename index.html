@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>wikiZek</title>
+</head>
+<body>
+    
+    <div class="gray-square">
+        <header>
+            <img src="images\genshin_logo.png" alt="genshin logo">
+        </header>
+
+        <div class="el-bar">
+            <div class="red">
+                <img onclick="createCircle('pyro')" id="pyro" src="images\pyro.png" alt="pyro">
+            </div>
+            <div class="blue">
+                <img onclick="createCircle('hydro')" id="hydro" src="images\hydro.png" alt="hydro">
+            </div>
+            <div class="aqua">
+                <img onclick="createCircle('anemo', 8)" id="anemo" src="images\anemo.png" alt="anemo">
+            </div>
+            <div class="purple">
+                <img onclick="createCircle('electro', 12)" id="electro" src="images\electro.png" alt="electro">
+            </div>
+            <div class="green">
+                <img onclick="createCircle('dendro', 4)" id="dendro" src="images\dendro.png" alt="dendro">
+            </div>
+            <div class="light-blue">
+                <img onclick="createCircle('cryo', 10)" id="cryo" src="images\cryo.png" alt="cryo">
+            </div>
+            <div class="yellow">
+                <img onclick="createCircle('geo', 8)" id="geo" src="images\geo.png" alt="geo">
+            </div>
+            
+        </div>
+        <main id="main">
+            <h1>Choose an Element above!</h1>
+        </main>
+        <img class="background" src="images\genshin-bg.avif" alt="monstadt background">
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

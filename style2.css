@@ -1,0 +1,246 @@
+:root {
+    --lighter: #F17C57;
+    --darker: #DA4819;
+    --lighter-trans: rgba(218, 72, 25, 0.4);
+    --darker-trans: rgba(137, 101, 90, 0.4)
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 102vh;
+    margin-top: -50px;
+    z-index: -1;
+}
+
+body {
+    height: auto;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main {
+    width: 80%;
+    margin-left: 14rem;
+    padding-bottom: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    display: flex;
+}
+
+.gray-square {
+    background-color: rgba(114, 114, 114, 0.45);
+    height: 99%;
+    width: 99%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 80px;
+    margin-top: 200px;
+    margin-left: 34vh;
+    color: #E8F0F7;
+    text-shadow: 4px 6px rgba(77, 130, 163, 0.8);
+    font-family: 'Lora', serif;
+}
+
+h2 {
+    font-size: 70px;
+    margin-top: 10px;
+    font-weight: 780;
+    color: var(--lighter);
+    -webkit-text-stroke: 3px var(--darker);
+}
+
+.el-bar {
+    width: 1450px;
+    height: 190px;
+    margin-top: 20px;
+    border: 20px;
+    display: flex;
+}
+
+#circle {
+    border-radius: 50%;
+    margin: 34px;   
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+}
+
+.cc-img {
+    height: 580px;
+    width: 580px;
+    border-radius: 30px;
+    margin: 0px 50px 50px 50px;
+    background: var(--lighter);
+    border: 6px solid var(--darker);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#name {
+    width: 200px;
+}
+
+#ccimg {
+    height: 80%;
+    width: 80%;
+}
+
+#char {
+    height: 90px;
+    width: 90px;
+}
+
+#weap {
+    height: 90px;
+    width: 90px;
+}
+
+#elem {
+    height: 90px;
+    width: 90px;
+}
+
+span {
+    width: 400px;
+}
+
+.char {
+    display: flex;
+    align-items: center;
+    width: 97%;
+    height: auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: end;
+    align-items: end;
+    width: 50%;
+}
+
+.teamcomp, .back {
+    align-self: center;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lighter-trans);
+    border: 10px dotted var(--darker);
+}
+
+#teamcomps, #back {
+    margin-top: 20px;
+    font-weight: 600;
+    color: var(--lighter);
+    -webkit-text-stroke: 2px var(--darker);
+}
+
+a {
+    color: #d43e0c;
+    text-decoration: none;
+    font-size: 40px;
+    height: 150px;
+}
+
+.artifacts, .weapons, .talents {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    width: 33.3%;
+    height: 100%;
+}
+
+#artifacts, #weapons, #talents {
+    margin: 0 0 20px 60px;
+}
+
+.square {
+    width: auto;
+    padding-bottom: 160px;
+    padding-top: 160px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: var(--lighter);
+    border: 6px solid var(--darker);
+}
+
+.hit {
+    border: 6px solid var(--lighter);
+    background-color: var(--darker);
+}
+
+.t-1, .t-2, .t-3, .t-p {
+    width: auto;
+    height: auto;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: var(--lighter-trans);
+    border: 6px solid var(--darker-trans);
+}
+
+.rest {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.artifacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.text{
+    font-size: 48px;
+    color: white;
+    font-weight: 600;
+}
+
+span img {
+    height: 90px;
+}
+
+span p {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+span {
+    display: flex;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    gap: 50px;
+    color: white;
+    font-weight: 600;
+}

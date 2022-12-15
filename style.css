@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* images */
+
+.el-bar img {
+    max-height: 190px;
+}
+
+#pyro {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#pyro:hover {
+    border-radius: 20px;
+    border: 10px solid rgba(201, 50, 50, 0.849);
+    margin-left: -10px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+#hydro:hover {
+    border-radius: 20px;
+    border: 10px solid rgb(56, 160, 179);
+    margin-left: -10px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+#anemo:hover {
+    border-radius: 20px;
+    border: 10px solid rgb(99, 241, 187);
+    margin-left: -10px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+#electro:hover {
+    border-radius: 20px;
+    border: 10px solid rgb(134, 90, 206);
+    margin-left: -10px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+#dendro:hover {
+    border-radius: 20px;
+    border: 10px solid rgb(107, 228, 117);
+    margin-left: -10px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+#cryo:hover {
+    border-radius: 20px;
+    border: 10px solid rgb(131, 180, 189);
+    margin-left: -10px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+#geo:hover {
+    border-radius: 20px;
+    border: 10px solid rgb(221, 189, 101);
+    margin-left: -10px;
+    margin-top: -10px;
+    cursor: pointer;
+ 
+}
+
+#geo {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 102vh;
+    margin-top: -50px;
+    z-index: -1;
+}
+
+/* relevant elements */
+
+body {
+    height: auto;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main {
+    width: 80%;
+
+    margin-left: 14rem;
+    padding-bottom: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gray-square {
+    background-color: rgba(114, 114, 114, 0.45);
+    height: 99%;
+    width: 99%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/* decorations */
+
+h1 {
+    font-size: 80px;
+    margin-top: 200px;
+    margin-left: 34vh;
+    color: #E8F0F7;
+    text-shadow: 4px 6px rgba(77, 130, 163, 0.8);
+    font-family: 'Lora', serif;
+}
+
+.el-bar {
+    width: 1450px;
+    height: 190px;
+    margin-top: 20px;
+    border: 20px;
+    display: flex;
+}
+
+#circlepyro, #circlehydro, #circleanemo, #circleelectro, #circledendro, #circlecryo, #circlegeo {
+    border-radius: 50%;
+    margin: 34px;   
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+}
+
+.pyro {
+    background-color: #E56821;
+}
+
+.pyro:active {
+    background-color: #f0ac8a;
+}
+
+.hydro {
+    background-color: #26A8D1;
+}
+
+.hydro:active {
+    background-color: #70D6F6;
+}
+
+.anemo {
+    background-color: #5AA18E;
+}
+
+.anemo:active {
+    background-color: #72E2C3;
+}
+
+.electro {
+    background-color: #B684C8;
+}
+
+.electro:active {
+    background-color: #6D5887;
+}
+
+.dendro {
+    background-color: #6DF6AC;
+}
+
+.dendro:active {
+    background-color: #23C18A;
+}
+
+.cryo {
+    background-color: #A0E9E5;
+}
+
+.cryo:active {
+    background-color: #56C7C0;
+}
+
+.geo {
+    background-color: #B48F3A;
+}
+
+.geo:active {
+    background-color: #E3B342;
+}
+
