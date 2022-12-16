@@ -1,3 +1,5 @@
+
+// ELEMENT OBJECTS
 const elements = {
     pyro:{
         light: "#F17C57",
@@ -40,6 +42,8 @@ const elements = {
     },
 }
 
+
+// CHARACTER OBJECTS
 const list = {
     pyro: [
         {
@@ -487,26 +491,32 @@ const list = {
 function createCircle(type) {
     const parent = document.getElementById("main");
     
-            //circle.parent.removeChild(circle)
+            // removes previous children
             parent.replaceChildren()
     
     for (let i = 0; i < list[type].length; i++) {
         const link = document.createElement("a")
         const circle = document.createElement("img");
         circle.src = list[type][i].img
-        link.href = "index2.html?char=" + list[type][i].id + "&type=" + type;
-        circle.classList.add(type)
+
+        // decides the address
+        link.href = "index2.html?char=" + list[type][i].id + "&type=" + type; 
+
+        // gives circles a class of their own element
+        circle.classList.add(type) 
 
         link.appendChild(circle)
-    
+
+        // appends the 'a' element into main
         document.querySelector("main").appendChild(link)
         
+        // gives id to circle based on element type
         circle.setAttribute('id','circle' + type);
-
-
     }
 }
 
+
+// decides what color / images will be used in index2
 function initIndex2 () {
 
     const url = new URL (window.location.href)
@@ -519,12 +529,15 @@ function initIndex2 () {
     document.querySelector("#element").innerText = char.element
     
     document.querySelector("#ccimg").src = char.img
-    
+
+    // selects index2 color theme
     root.style.setProperty("--lighter", element.light)
     root.style.setProperty("--darker", element.dark)
     root.style.setProperty("--lighter-trans", element.lightTrans)
     root.style.setProperty("--darker-trans", element.darkTrans)
-    
+
+
+    // picks photos based on element type FROM "element" array
     document.querySelector("#char").src = element.character
     document.querySelector("#weap").src = element.weapon
     document.querySelector("#elem").src = element.element
